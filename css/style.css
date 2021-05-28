@@ -1,0 +1,2549 @@
+/*
+HTML Portfolio
+
+
+Table of Content
+----------------
+
+1. banner part
+2. menu part
+3. about part
+4. portfolio part
+5. worksplace part
+6. experience part
+7. testimonial part
+8. education part
+9. contact part
+9. hire part
+10. footer part
+11. back to top part
+12. social icon part
+13. responsive @media css part  
+*/
+
+*{
+	margin:0px;
+	padding:0px;
+	outline:0px;
+}
+
+li{
+	list-style-type:none;
+}
+
+img{
+	border:0px !important;
+}
+a{
+	text-decoration:none !important;
+	outline:none !important;
+}
+
+.p0{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.margin-l-r{
+	margin-right:0px;
+	margin-left:0px;
+}
+
+.clr{
+	clear:both;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p,address{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+img{
+    filter: grayscale(1);
+}
+/*start main css part*/
+
+/*start banner part css*/
+.banner{
+	background:url(../images/react.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	height:calc(100vh - 74px);
+    position: relative;
+}
+.ovelay_shahin{
+	background-color: rgba(19,19,19,0.5);
+    height: 100%;
+	padding:150px 0px;
+}
+
+.shahin_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.shahin_banner h2{
+	color: #ddd;
+	font-family: 'Raleway', sans-serif;
+	font-weight:400;
+	font-size:40px;
+	padding-bottom:40px;
+}
+.shahin_banner h2 span {
+    color: #f1f1f1;
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.shahin_banner p{
+	color:#f1f1f1;
+	font-family: 'Raleway', sans-serif;
+	font-weight:400;
+    font-style: italic;
+	font-size:16px;
+	padding-bottom:20px;
+	position:relative;
+    display: inline-block;
+}
+
+.shahin_banner p:after{
+	position:absolute;
+	content:"";
+	background:#fff;
+	width:100px;
+	left:calc(100% + 15px);
+	top:12px;
+	height:1px;
+}
+
+.shahin_banner p:before{
+	position:absolute;
+	content:"";
+	background:#fff;
+	width:100px;
+	right:calc(100% + 15px);
+	top:12px;
+	height:1px;
+}
+
+.shahin_banner h4{
+	color: #eee;
+	font-family: 'Raleway', sans-serif;
+	font-weight:500;
+	font-size:30px;
+	padding-bottom:40px;
+}
+
+.banner a {
+	color:#f1f1f1;
+	font-size:30px;
+	padding-bottom:40px;
+	display:inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.banner a i{
+	position:relative;
+}
+
+.banner a i i{
+	position:absolute;
+	content:"";
+	font-size:14px;
+	left:15px;
+	bottom:8px;
+	color:rgb(241,181,25);
+}
+
+
+/* end banner part css */
+
+/* menu part css sart */
+.navbar-brand > img {
+    filter: grayscale(0);
+}
+
+.navbar{
+	border-radius:0px;
+    z-index: 999;
+}
+
+.icon-bar{
+	background:#fff;
+}
+
+.shahin_menu_part{
+	background:#131313;
+	border-bottom:2px solid #bbb;
+}
+
+.shahin_navbar li a{
+	color:#f1f1f1;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:600;
+	font-family: 'Raleway', sans-serif;
+	display:block;
+	position:relative;
+	padding:25px 17px;
+}
+
+.shahin_navbar li a:before{
+	position:absolute;
+	content:"";
+	height:2px;
+	width:100%;
+	left:0;
+	bottom:-2px;
+	transform:scale(0);
+	background:#FAD008;
+	transition:all linear .3s;
+}
+
+.shahin_navbar li a:hover, .shahin_navbar li.active{
+	background-color:#222 !important;
+}
+
+.shahin_navbar li a:hover::before{
+	transform:scale(1);
+}
+
+.shahin_navbar li a:focus{
+	background-color:transparent !important;
+}
+
+.shahin_navbar li.active a::before{
+	transform:scale(1);
+}
+
+/* menu part end */
+
+/* about part css sart */
+.about_shahin{
+	padding:90px 0px;
+	background:url(../images/pattern.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.shahin_img .coun{
+	width: 320px;
+	margin: 0 auto;
+	height:320px;
+	border: 3px solid #F1B519;
+	border-radius: 5px;
+	position: relative;
+}
+
+.shahin_img .coun img{
+	border-radius:5px;
+}
+
+.shahin_img .over{
+	width: 320px;
+	margin: 0 auto;
+	height:320px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.shahin_img .over:before,
+.shahin_img .over:after{
+	content: '';
+	height: 45px ;
+	width: 45px;
+	background: transparent;
+	transform:translateX(-50%) rotate(45deg);
+	-webkit-transform:translateX(-50%) rotate(45deg);
+	-o-transform:translateX(-50%) rotate(45deg);
+	left:50%;
+	position: absolute;
+    border-radius: 3px;
+}
+
+.shahin_img .over:after{
+	top: -24.5px;
+	border-left: 3px solid #F1B519;
+	border-top: 3px solid #F1B519;
+}
+
+.shahin_img .over:before{ 
+	bottom: -20px;
+	border-right: 3px solid #F1B519;
+	border-bottom: 3px solid #F1B519; 
+}
+
+.shahin_img .coun:before,
+.shahin_img .coun:after{
+	content: '';
+	top: 50%;
+	height: 45px ;
+	width: 45px;
+	background: transparent;
+	transform:translateY(-50%) rotate(45deg);
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-o-transform:translateY(-50%) rotate(45deg);
+	position: absolute;
+	border-radius: 3px;
+}
+
+.shahin_img .coun:after{
+	left:-23px;
+	border-left: 3px solid #F1B519;
+	border-bottom: 3px solid #F1B519;
+}
+
+.shahin_img .coun:before{
+	right:-23.5px;
+	border-right: 3px solid #F1B519;
+    border-top: 3px solid #F1B519;
+}
+	
+.shahin_about_content p {
+    color: #eeeeee;
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.shahin_about_content h5{
+	color:#ddd;
+	font-size:18px;
+	font-weight:500;
+	font-family: 'Raleway', sans-serif;
+	text-transform:capitalize;
+}
+
+.shahin_about_content h5 span{
+	color:#f1f1f1;
+	font-size:22px;
+	font-weight:500;
+    padding-left: 5px;
+	font-family: 'Raleway', sans-serif;
+}
+	
+/* about part css end */
+
+/* portfolio part css start */
+.portfolio_shahin{
+	padding:90px 0px 0px;
+}
+
+.shahin_comm_heading h2{
+	margin-bottom:35px;
+	color:#070809;
+	text-transform:uppercase;
+	font-size:32px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+	position:relative;
+    display: inline-block;
+}
+
+.shahin_comm_heading h2:after{
+	border-left:2px solid #131313;
+	border-top:2px solid #131313;
+	content:"";
+	position:absolute;
+	height:20px;
+	width:20px;
+	left:-10px;
+	top:-5px;
+}
+
+.shahin_comm_heading h2:before{
+	border-right:2px solid #131313;
+	border-bottom:2px solid #131313;
+	content:"";
+	position:absolute;
+	height:20px;
+	width:20px;
+	right:-10px;
+    bottom: -5px;
+}
+	
+	
+/* category filter */
+
+.filter-container {
+    text-align:center;
+    padding:0px 20px 0px; 
+}
+
+
+.shahin_fillter ul.filter > li > a {
+    color: #535353;
+    font-size:16px;
+    line-height:80px;
+	text-transform:capitalize;
+	font-family: 'Raleway', sans-serif;
+	font-weight:600;
+}
+
+.shahin_fillter ul.filter > li > a:hover,ul.filter > li > a:focus {
+    text-decoration:none;
+    color: rgb(241,181,25);
+    outline:none
+}
+
+.shahin_fillter ul.filter > li.active a {
+    color:rgb(241,181,25);
+}
+
+.shahin_fillter ul.filter > li span {
+    color: #131313;
+    font-size:20px;
+    display:inline-block;
+    margin:0 10px
+}
+
+.filter-section .filter-container .filter > li {
+    padding:0;
+    margin:0
+}
+
+.filter-section h1 {
+    text-align:center
+}
+
+
+/* the color of the transparent overlay border */
+.portfolio-section{
+	padding:0px 0px 85px;
+    margin-bottom: -35px;
+	}
+
+
+/* portfolio images */
+
+.portfolio-section figure {
+    float:left;
+    width:100%;
+    position:relative
+}
+
+.portfolio-section figure img {
+    width:100%;
+    height:auto
+}
+
+
+/* project title under image */
+
+.portfolio-section .article-title {
+    text-align:center;
+    float:left;
+    width:100%;
+    font-size:18px;
+    line-height:24px;
+    padding:10px 0 30px 0;
+}
+
+.portfolio-section .article-title a {
+    color:#131313;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+	font-weight:600;
+    font-style: italic;
+	text-transform:capitalize;
+}
+
+
+/* transparent overlay */
+
+.portfolio-section figure:hover .overlay {
+    opacity:1;
+    visibility:visible
+}
+
+.portfolio-section figure:hover .overlay-background {
+    opacity:.8;
+    visibility:visible
+}
+
+.portfolio-section figure .overlay-background {
+    z-index:1;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    visibility:hidden;
+    width:100%;
+    height:100%
+}
+
+.portfolio-section figure .overlay-background .inner {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:11px;
+    background-color:rgba(19,19,19,0.8);
+}
+
+.portfolio-section figure .overlay {
+    z-index:2;
+    transition:all .2s ease-in-out;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    visibility:hidden;
+    width:100%;
+    height:100%
+}
+
+.portfolio-section figure .inner-overlay {
+    display:table;
+    width:100%;
+    height:100%;
+	position:relative;
+}
+
+.portfolio-section figure .inner-overlay::after{
+	position:absolute;
+	content:"";
+	left:25px;
+	top:25px;
+	border-top:2px solid #fff;
+	border-left:2px solid #fff;
+	width:60px;
+	height:60px;
+}
+
+.portfolio-section figure .inner-overlay::before{
+	position:absolute;
+	content:"";
+	right:25px;
+	bottom:25px;
+	border-bottom:2px solid #fff;
+	border-right:2px solid #fff;
+	width:60px;
+	height:60px;
+}
+
+.portfolio-section figure .inner-overlay-content {
+    display:table-cell;
+    vertical-align:middle;
+    width:100%;
+    padding:20px 40px
+}
+
+.portfolio-section figure .inner-overlay-content.with-icons {
+    text-align:center
+}
+
+
+/* icons inside overlay */
+
+.portfolio-section figure .inner-overlay-content.with-icons a {
+    width:40px;
+    height:40px;
+    line-height:42px;
+    display:inline-block;
+    margin:0 10px;
+    text-decoration:none;
+    font-size:16px;
+	background:rgba(19,19,19,0.8);
+    color:rgb(241,181,25);
+	border:1px solid #fff;
+    border-radius:0
+}
+
+
+/* skew image on hover */ 
+
+.isotopeSelector img {
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+    transition:all .4s ease
+}
+
+.isotopeSelector:hover img {
+    -moz-transform:scale(1.5) rotate(2deg);
+    -webkit-transform:scale(1.5) rotate(2deg);
+    -o-transform:scale(1.5) rotate(2deg);
+    -ms-transform:scale(1.5) rotate(2deg);
+    transform:scale(1.5) rotate(2deg);
+    -webkit-transition:all .8s ease;
+    -moz-transition:all .8s ease;
+    -ms-transition:all .8s ease;
+    -o-transition:all .8s ease;
+    transition:all .8s ease
+}
+
+.isotopeSelector figure {
+    overflow:hidden
+}
+
+.isotopeSelector figure {
+    box-shadow:0 0 2px rgba(0,0,0,0.2)
+}
+
+.fancybox-skin{
+	background:#131313;
+}
+
+
+
+/* portfolio part css end */
+
+
+/* worksplace part css start */
+
+.shahin_worksplace{
+	background:url(../images/banner.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.ovelay_shahin_two{
+	background-color: rgba(19,19,19,0.5);
+    height: 100%;
+	padding:90px 0px 85px 0px;
+}
+
+.shahin_big_possi h2{
+	color: #f1f1f1;
+}
+
+.shahin_big_possi h2:after{
+	border-color:#fff;
+}
+
+.shahin_big_possi h2:before{
+	border-color:#fff;
+}
+	
+.shahin_woksplace{
+	padding:30px 0px;
+}
+
+.shahin_work_part i{
+	color:#fff;
+	font-size:60px;
+	display:block;
+	padding:25px 0px 0px;
+}
+
+.shahin_work_part{
+	position:relative;
+}
+
+.shahin_work_part:after{
+	position:absolute;
+	content:"";
+	left:15px;
+	top:0px;
+	border-left:2px solid #fff;
+	border-top:2px solid #fff;
+	width:50px;
+	height:50px;
+}
+
+.shahin_work_part:before{
+	position:absolute;
+	content:"";
+	right:15px;
+	top:0px;
+	border-right:2px solid #fff;
+	border-top:2px solid #fff;
+	width:50px;
+	height:50px;
+}
+
+.shahin_work_part_two:after{
+	position:absolute;
+	content:"";
+	left:15px;
+	bottom:0px;
+	border-left:2px solid #fff;
+	border-bottom:2px solid #fff;
+	width:50px;
+	height:50px;
+}
+
+.shahin_work_part_two:before{
+	position:absolute;
+	content:"";
+	right:15px;
+	bottom:0px;
+	border-right:2px solid #fff;
+	border-bottom:2px solid #fff;
+	width:50px;
+	height:50px;
+}
+
+.shahin_woksplace h4{
+	font-size:16px;
+	color:#ddd;
+	font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	text-transform:capitalize;
+	padding-top:5px;
+}
+.shahin_woksplace:hover .shahin_work_part:after,
+.shahin_woksplace:hover .shahin_work_part:before,
+.shahin_woksplace:hover .shahin_work_part_two:after,
+.shahin_woksplace:hover .shahin_work_part_two:before,
+.shahin_woksplace:hover h4,
+.shahin_woksplace:hover .shahin_work_part i{
+	color:#F1B519;
+	border-color:#F1B519;
+}
+	
+/* worksplace part css end */
+
+
+/* experience part css start */
+	
+.shahin_experience{
+	padding:93px 0px 85px 0;
+    margin-bottom: -5px;
+}
+.shahin_exe_h h2{
+	margin-bottom:70px;
+}
+	
+.shahin_exp_part_main{
+	position:relative;
+	padding:20px 0px 20px 50px;
+}
+
+.shahin_exp{
+	padding-top:5px;
+}
+
+.shahin_exp_part:after{
+	position:absolute;
+	content:"";
+	left:15px;
+	top:0px;
+	border-left:2px solid #131313;
+	border-top:2px solid #131313;
+	width:50px;
+	height:50px;
+}
+
+.shahin_exp_part:before{
+	position:absolute;
+	content:"";
+	right:15px;
+	top:0px;
+	border-right:2px solid #131313;
+	border-top:2px solid #131313;
+	width:50px;
+	height:50px;
+}
+
+.shahin_exp_part_two:after{
+	position:absolute;
+	content:"";
+	left:15px;
+	bottom:0px;
+	border-left:2px solid #131313;
+	border-bottom:2px solid #131313;
+	width:50px;
+	height:50px;
+}
+
+.shahin_exp_part_two:before{
+	position:absolute;
+	content:"";
+	right:15px;
+	bottom:0px;
+	border-right:2px solid #131313;
+	border-bottom:2px solid #131313;
+	width:50px;
+	height:50px;
+}
+
+.shahin_exp_part h4{
+	color:#0b0c0d;
+	text-transform:capitalize;
+	font-weight:600;
+	font-family: 'Raleway', sans-serif;
+	font-size:28px;
+	padding-bottom:10px;
+    padding-top: 35px;
+}
+
+.shahin_exp_part p{
+	color: #161716;
+	text-transform:capitalize;
+	font-weight:400;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+	padding-right:30px;
+	line-height:28px;
+	padding-bottom:15px;
+	padding-top:10px;
+}
+
+.shahin_exp_part h5 {
+    color: #161716;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.shahin_exp_part h5 span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shahin_p {
+    color: #161716;
+    font-size: 15px ;
+    text-transform: capitalize;
+	line-height:0;
+}
+	
+/*skill part css sart*/
+.skills-bar-container {
+	position: relative;
+	width:90%;
+	top: 60%;
+	left: 0%;
+	list-style: none;
+	margin-top:13px;
+    padding-bottom:37px; 
+}
+
+.skills-bar-container li {
+	position: relative;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.skills-bar-container li .progressbar-title {
+	color: #131313;
+	font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.skills-bar-container li .progressbar-title h3 {
+	display: inline-block;
+	color: #161716;
+	font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+	text-transform:capitalize;
+	padding-bottom:5px;
+}
+
+.skills-bar-container li .progressbar-title .percent {
+	position: absolute;
+	right: 5px;
+}
+
+.skills-bar-container li .bar-container {
+	  background: #ddd;
+	  position: relative;
+	  width: 100%;
+	  height: 6px;
+	  margin-top: 5px;
+	  display: block;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  border-radius: 5px;
+	}
+.skills-bar-container li .bar-container .progressbar {
+	  position: absolute;
+	  width: 0%;
+	  height: 100%;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  border-radius: 5px;
+	  -webkit-animation-duration: 2s;
+	  animation-duration: 2s;
+	  -webkit-animation-timing-function: ease-out;
+	  animation-timing-function: ease-out;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+.skills-bar-container li .bar-container #progress-html {
+	  -webkit-animation-name: progress-html;
+	  animation-name: progress-html;
+	  -webkit-animation-delay: 0.7s;
+	  animation-delay: 0.7s;
+	}
+.skills-bar-container li .bar-container #progress-css {
+	  -webkit-animation-name: progress-css;
+	  animation-name: progress-css;
+	  -webkit-animation-delay: 1.4s;
+	  animation-delay: 1.4s;
+	}
+.skills-bar-container li .bar-container #progress-javascript {
+	  -webkit-animation-name: progress-javascript;
+	  animation-name: progress-javascript;
+	  -webkit-animation-delay: 2.1s;
+	  animation-delay: 2.1s;
+	}
+.skills-bar-container li .bar-container #progress-php {
+	  -webkit-animation-name: progress-php;
+	  animation-name: progress-php;
+	  -webkit-animation-delay: 2.8s;
+	  animation-delay: 2.8s;
+	}
+.skills-bar-container li .bar-container #progress-angular {
+	  -webkit-animation-name: progress-angular;
+	  animation-name: progress-angular;
+	  -webkit-animation-delay: 3.5s;
+	  animation-delay: 3.5s;
+	}
+
+.progressred {
+	  background-color: #F1B519;
+	}
+
+@keyframes progress-html {
+	  0% {
+		width: 0%;
+	  }
+	  100% {
+		width: 100%;
+	  }
+	}
+@keyframes progress-css {
+	  0% {
+		width: 0%;
+	  }
+	  100% {
+		width: 90%;
+	  }
+	}
+@keyframes progress-javascript {
+	  0% {
+		width: 0%;
+	  }
+	  100% {
+		width: 70%;
+	  }
+	}
+@keyframes progress-php {
+  0% {
+		width: 0%;
+	  }
+	  100% {
+		width: 55%;
+	  }
+	}
+@keyframes progress-angular {
+	  0% {
+		width: 0%;
+	  }
+	  100% {
+		width: 65%;
+	  }
+	}
+
+/*skill part css end*/	
+	
+/* experience part css end */
+
+/* testimonial part css start */
+.testimonial_shahin{
+	background:url(../images/banner.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	}
+.ovelay_shahin_two{
+	background-color: rgba(19,19,19,0.5);
+    height: 100%;
+	padding:90px 0px 85px 0;
+    margin-bottom: -5px;
+	}
+.shahin_test_h2 h2{
+    margin-bottom: 70px;
+}
+.testimonial_shahin_part{
+	padding:50px 0px;
+	}
+.testimonial_shahin_part_one:after,
+.testimonial_shahin_part_one:before,
+.testimonial_shahin_part_two:after,
+.testimonial_shahin_part_two:before{
+	border-color:#fff;
+	}
+	
+	
+/* shahin_testimonial part start */
+.shahin_test{
+	padding:0px 0px 250px;
+	}
+.shahin_test_img img{
+	margin:0px auto;
+	border:5px solid #F1B519 !important;
+	border-radius:5px;
+	}
+.shahin_test_arow{
+	position:absolute;
+	content:"";
+	left:50%;
+	bottom:-4.5px;
+	height:9px;
+	width:9px;
+	background:#B6B6B6 !important;
+	transform: translateX(-50%) rotate(45deg);
+	}
+.shahin_test_content{
+	position:absolute;
+	top:75%;
+	}
+.shahin_test_content h4{
+	color:#ffffff;
+	font-size:18px;
+	text-transform:uppercase;
+	font-weight:700;
+	font-family: 'Raleway', sans-serif;
+	padding-top:40px;
+	padding-bottom:10px;
+	}
+.shahin_test_content h5{
+	color:#F1B519;
+	font-size:14px;
+	text-transform:capitalize;
+	font-weight:500;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom:10px;
+	}
+.shahin_test_content p{
+	color:#ddd;
+	font-size:14px;
+	text-transform:capitalize;
+	font-weight:400;
+	font-family: 'Raleway', sans-serif;
+	line-height:28px;
+	padding-left:40px;
+	}
+.shahin_test_content p span{
+	color:#F1B519;
+	}
+.carousel-indicators{
+	bottom:4%;
+	}
+.carousel-indicators li{
+	border:2px solid #F1B519;
+	}
+.carousel-indicators .active{
+	background:#F1B519;
+	}	
+/* testimonial part css end */
+
+/* education part css start */
+.education_shahin{
+	padding:93px 0px 85px 0px;
+	}
+.shahin_edu_h2{
+	padding-bottom:23px;
+	}
+	
+.education_shahin_level{
+	padding:30px 0px 30px 30px;
+	position:relative;
+	}
+.education_shahin_level h3{
+	color:#fff;
+	font-size:18px;
+	text-transform:capitalize;
+	font-weight:500;
+	font-family: 'Raleway', sans-serif;
+	padding:10px 10px;
+	background:#131313;
+	display:inline-block;
+	border-radius:8px 0px 0px 8px;
+	position:absolute;
+	content:"";
+	right:17px;
+	top:2px;  
+	}
+.education_shahin_level h4{
+	color:#131313;
+	font-size:20px;
+	text-transform:capitalize;
+	font-weight:500;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom:10px;
+	padding-top:30px;
+	}
+.education_shahin_level h5{
+	color:#F1B519;
+	font-size:15px;
+	text-transform:capitalize;
+	font-weight:500;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom:15px;
+	}
+.education_shahin_level p{
+	color:#070809;
+	font-size:14px;
+	line-height:26px;
+	text-transform:capitalize;
+	font-weight:400;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom:15px;
+	}
+	
+/* education part css end */
+
+/* contact part start */
+
+.contact_shahin{
+	background:url(../images/banner.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	}
+.shahin_padd_ct{
+	margin-bottom:40px;
+	}
+.shahin_ct_mar{
+	margin-bottom:40px;
+	}
+.shahin_con_part:after{
+	border-color:#fff;
+	height:0px;
+	width:92%;
+	bottom:15px;
+	}
+.shahin_con_part:before{
+	border-color:#fff;
+	height:25px;
+	width:0px;
+	bottom:15px;
+	}
+.shahin_con_part_two:after{
+	border-color:#fff;
+	height:25px;
+	width:0px;
+	}
+.shahin_con_part_two:before{
+	border-color:#fff;
+	height:0px;
+	width:91%;
+	}
+	
+.shahin_con_part_text:after{
+	border-color:#fff;
+	height:0px;
+	width:95.7%;
+	bottom:15px;
+	}
+.shahin_con_part_text:before{
+	border-color:#fff;
+	height:100px;
+	width:0px;
+	bottom:15px;
+	}
+.shahin_con_part_two_text:after{
+	border-color:#fff;
+	height:100px;
+	width:0px;
+	}
+.shahin_con_part_two_text:before{
+	border-color:#fff;
+	height:0px;
+	width:95.5%;
+	}
+	
+.shahin_contact .fields{
+	width:100%;
+	height:38px;
+	border:none;
+	font-size:15px;
+	font-family:opensans;
+	padding:0px 15px;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+	margin-bottom:15px;
+	background:none;
+	color:#fff;
+	}
+.shahin_contact textarea{
+	width:100%;
+	height:100px;
+	border:none;
+	font-size:15px;
+	font-family:opensans;
+	padding:15px;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+	border-radius:5px;
+	margin-bottom:15px;
+	background:none;
+	color:#fff;
+	resize:none;
+	}	
+.sub-btn{
+	background-color: transparent;
+    border: 0 none;
+    color: #fff;
+    font-size: 15px;
+	text-transform:uppercase;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 3%;
+	padding:10px 0;
+	display:inline-block;
+    text-align: center;
+	transition:all linear .3s;
+	}
+.shahin_ct_mar:hover .sub-btn{
+	color:#F1B519;
+	}
+.shahin_ct_mar:hover .sbt_con1:after,
+.shahin_ct_mar:hover .sbt_con1:before,
+.shahin_ct_mar:hover .sbt_con:after,
+.shahin_ct_mar:hover .sbt_con:before{
+	border-color:#F1B519;
+	}
+.sbt_con1:after{
+	border-color:#fff;
+	height:10px;
+	width:10px;
+	}
+.sbt_con1:before{
+	border-color:#fff;
+	height:10px;
+	width:10px;
+	}
+.sbt_con:after{
+	border-color:#fff;
+	height:10px;
+	width:10px;
+	}
+.sbt_con:before{
+	border-color:#fff;
+	height:10px;
+	width:10px;
+	}
+/* contact page end */
+	
+/* hire part css*/
+.shain_hire_h2 h2{
+	margin:70px 0px;
+	}
+	
+.shahin_hire ul{
+	padding-left:22%;
+	}
+.shahin_hire ul li{
+	float:left;
+	}
+.shahin_hire ul li a{
+	display:block;
+	margin:10px 25px;
+	}
+
+.shahin_hire ul li a:hover img {
+    filter: invert(0.5);
+}
+.shahin_hire_part_two:after{
+	left:0px;
+	bottom:0px;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part_two:before{
+	right:0;
+	bottom:0;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part:after{
+	left:0px;
+	top:0px;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part:before{
+	right:0;
+	top:0;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+/* hire part end*/
+
+/* contact part  end*/
+	
+/* footer part start */
+footer{
+	background:#131313;
+	padding:25px 0px;
+	}
+footer h4{
+	color:#fff;
+	font-size:16px;
+	font-weight:400;
+	font-family: 'Raleway', sans-serif;
+	text-transform:capitalize;
+	}
+footer h4 a{
+	color:#F1B519;
+	font-size:18px;
+	font-weight:600;
+	}
+footer h4 a:hover{
+	color:#fff;
+	}
+/* footer part end */
+
+/* back to top part start */
+.back-to-top {
+    bottom: 50px;
+    position: fixed;
+    right: 30px;
+	}
+.back-to-top i {
+    background: #131313 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 6px 10px;
+	}
+/* back to top part end */
+
+/* social icon part start */
+.social_icon {
+	position: fixed;
+	left: calc(100% - 40px);
+	top: 50%;
+	z-index: 999999999999;
+	transform: translateY(-50%);
+	display: inline-block;
+}
+.social_icon ul li{
+    margin-top: 3px;
+    background: #3d4350;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition:all linear .5s;
+    white-space: nowrap;
+}
+.social_icon ul li a{
+    color: #fff;
+    line-height: 40px;
+    padding-right: 10px;
+}
+.social_icon ul li:hover{
+	-webkit-transform: translate(-89px, 0);
+	transform: translate(-89px, 0);
+	}
+.social_icon ul li .fbbg{
+	background: #3498db;
+	}
+.social_icon ul li .twbg{
+	background: #32ccfe;
+	}
+.social_icon ul li .glbg{
+	background: #d63b27;
+	}
+.social_icon ul li .lnbg{
+	background: #0077B5;
+	}
+.social_icon ul li a i{
+    margin-right: 5px;
+    width: 40px;
+    text-align: center;
+    background: #3d4350;
+    line-height: 40px;
+	}
+.social_icon ul li:hover i{
+    border-radius: 3px;
+	}
+/* social icon part end */
+
+
+
+
+/* responsive @media css part start */
+
+/* media start of large/1200px */
+@media(min-width:992px) and (max-width:1199px){
+    .shahin_navbar li a {
+        font-size: 14px;
+        padding: 23px 12px;
+    }
+    .shahin_con_part_two::before {
+        width: 90%;
+    }
+    .shahin_con_part::after {
+        width: 89.5%;
+    }
+    .shahin_con_part_two_text::before {
+        width: 94.5%;
+    }
+    .shahin_con_part_text::after {
+        width: 94.7%;
+    }
+}
+/* media ends of large/1200px */
+
+/* media start of tab/991px */ 
+@media(min-width:768px) and (max-width:991px){
+/*start main css part*/
+
+/*banner css part start*/
+.banner{
+	height:calc(100vh - 74px);
+	}
+.ovelay_shahin{
+	padding:120px 0px;
+	}
+	
+.shahin_banner h2{
+	font-size:26px;
+	padding-bottom:30px;
+	}
+.shahin_banner h2 span{
+	font-size:48px;
+	}
+.shahin_banner p{
+	font-size:16px;
+	padding-bottom:20px;
+	}
+.shahin_banner h4{
+	font-size:21px;
+	padding-bottom:30px;
+	}
+.shahin_banner a {
+	font-size:30px;
+	padding-bottom:30px;
+	}
+.shahin_banner a i i{
+	font-size:14px;
+	left:15px;
+	bottom:8px;
+	}
+/*banner css part end*/
+
+/*menu_part css sart */
+.navbar-brand{
+	padding:5px;
+	}
+.shahin_navbar li a{
+	font-size:11px;
+	padding:15px 7px;
+	}
+/*shahin_menu_part css end */
+
+/* about me css sart */
+.about_shahin{
+	padding:60px 0px 90px;
+	}
+.shahin_img{
+	padding-top:40px;
+	}
+.shahin_img .coun{
+	 width: 200px;
+	 height:200px;
+	}
+.shahin_img .coun img{
+	border-radius:5px;
+	}
+
+.shahin_img .over{
+	 width: 200px;
+	 height:200px;
+	 top: 0;
+	 left: 0;
+	}
+.shahin_img .over:before,
+.shahin_img .over:after{
+	 height: 45px ;
+	 width: 45px;
+	}
+.shahin_img .over:after{
+	 top: -24.5px;
+	}
+.shahin_img .over:before{ 
+	 bottom: -20px;
+	}
+
+.shahin_img .coun:before,
+.shahin_img .coun:after{
+	 top: 50%;
+	 height: 45px ;
+	 width: 45px;
+	}
+
+.shahin_img .coun:after{
+	 left:-23px;
+	}
+.shahin_img .coun:before{
+	 right:-23.5px;
+	}
+	
+.shahin_about_content p{
+	font-size:14px;
+	padding-bottom:10px;
+	line-height:23px;
+	}
+.shahin_about_content h5{
+	font-size:16px;
+	}
+.shahin_about_content h5 span{
+	font-size:19px;
+	}
+	
+/* about me css end */
+
+/* portfolio css start */
+.portfolio_shahin{
+	padding:60px 0px 0px;
+	}
+.shahin_comm_heading h2{
+	margin-bottom:30px;
+	font-size:32px;
+	}
+/* category filter */
+.filter-container {
+    padding:20px
+	}
+.shahin_fillter ul.filter > li > a {
+    font-size:16px;
+    line-height:60px;
+	}
+.shahin_fillter ul.filter > li span {
+    font-size:20px;
+    margin:0 10px
+ }
+.filter-section .filter-container .filter > li {
+    padding:0;
+    margin:0
+ }
+/* the color of the transparent overlay border */
+.portfolio-section{
+	padding:0px 0px 60px;
+	}
+/* project title under image */
+.portfolio-section .article-title a {
+	font-size:14px;
+	}
+/* transparent overlay */
+.portfolio-section figure .overlay-background .inner {
+    margin:11px;
+	}
+
+.portfolio-section figure .inner-overlay::after{
+	left:25px;
+	top:25px;
+	width:20px;
+	height:20px;
+	}
+.portfolio-section figure .inner-overlay::before{
+	right:25px;
+	bottom:25px;
+	width:20px;
+	height:20px;
+	}
+.portfolio-section figure .inner-overlay-content {
+    padding:20px 10px
+	}
+/* icons inside overlay */
+.portfolio-section figure .inner-overlay-content.with-icons a {
+    width:30px;
+    height:30px;
+    line-height:30px;
+    margin:0 8px;
+    font-size:10px;
+	}
+/* portfolio css end */
+
+/* worksplace css start */
+.ovelay_shahin_two{
+	padding:60px 0px;
+	}	
+.shahin_woksplace{
+	padding:30px 0px;
+	}
+.shahin_work_part i{
+	font-size:30px;
+	}
+.shahin_work_part{
+	position:relative;
+	}
+.shahin_work_part:after{
+	left:15px;
+	top:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_work_part:before{
+	right:15px;
+	top:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_work_part_two:after{
+	left:15px;
+	bottom:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_work_part_two:before{
+	right:15px;
+	bottom:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_woksplace h4{
+	font-size:12px;
+	padding-top:5px;
+	}
+	
+/* worksplace css end */
+
+/* experience css start */
+	
+.shahin_experience{
+	padding:60px 0px 35px;
+	}
+.shahin_exe_h h2{
+	margin-bottom:70px;
+	}
+.shahin_exp_part_main{
+	padding:20px 0px 20px 50px;
+	}
+.shahin_exp_part:after{
+	left:15px;
+	top:0px;
+	width:50px;
+	height:50px;
+	}
+.shahin_exp_part:before{
+	right:15px;
+	top:0px;
+	width:50px;
+	height:50px;
+	}
+.shahin_exp_part_two:after{
+	left:15px;
+	bottom:-380px;
+	width:50px;
+	height:50px;
+	}
+.shahin_exp_part_two:before{
+	right:15px;
+	bottom:-380px;
+	width:50px;
+	height:50px;
+	}
+.shahin_exp_part h4{
+	font-size:20px;
+	padding-bottom:5px;
+	}
+.shahin_exp_part p{
+	font-size:14px;
+	padding-right:30px;
+	line-height:24px;
+	padding-bottom:22px;
+	}
+.shahin_exp_part h5 {
+    font-size: 14px;
+	padding-top:10px;
+	}
+.shahin_exp_part h5 span {
+    font-size: 12px;
+	}
+.shahin_p {
+    font-size: 13px !important;
+	padding-bottom:5px !important;
+	}
+	
+/*skill part css sart*/
+.skills-bar-container {
+	  width:85%;
+	  top: 60%;
+	  left: 0%;
+	}
+.skills-bar-container li {
+	  padding: 0px;
+	  margin-bottom: 15px;
+	}
+.skills-bar-container li .progressbar-title {
+     font-size: 13px;
+	}
+.skills-bar-container li .progressbar-title h3 {
+     font-size: 16px;
+	 padding-bottom:3px;
+	 padding-top:5px;
+	}
+/*skill part css end*/
+
+/* testimonial css start */
+
+.ovelay_shahin_two{
+	padding:60px 0px 45px;
+	}
+.testimonial_shahin_part{
+	padding:50px 0px;
+	}
+	
+/* shahin_testimonial part start */
+.shahin_test_a:before{
+    bottom:20px;
+    right: 70px;
+    width: 50px;
+	height: 50px;
+	}
+.shahin_test_a:after{
+    bottom: 20px;
+    left: 70px;
+    width: 50px;
+	height: 50px;
+	}
+.shahin_test_ab:before{
+    top: 20px;
+    right: 70px;
+    width: 50px;
+	height: 50px;
+	}
+.shahin_test_ab:after{
+    top: 20px;
+    left: 70px;
+    width: 50px;
+	height: 50px;
+	}
+.shahin_test{
+	padding:0px 0px 250px;
+	}
+.shahin_test_img img{
+	margin:0px auto;
+	border-radius:5px;
+	}
+.shahin_test_content{
+	top:75%;
+	}
+.shahin_test_content h4{
+	font-size:17px;
+	padding-top:20px;
+	padding-bottom:10px;
+	}
+.shahin_test_content h5{
+	font-size:15px;
+	padding-bottom:10px;
+	}
+.shahin_test_content p{
+	font-size:12px;
+	line-height:22px;
+	padding-left:25px;
+	}
+.shahin_test_content p span{
+	font-size:14px;
+	}
+.carousel-indicators{
+	bottom:10%;
+	}
+/* testimonial css end */
+
+/* education css start */
+.education_shahin{
+	padding:60px 0px;
+	}
+.shahin_edu_h2{
+	padding-bottom:50px;
+	}
+	
+.education_shahin_level{
+	padding:30px 0px 10px 30px;
+	}
+.edu_bar:before{
+    height: 50px;
+    right: 15px;
+    bottom: 0;
+    width: 50px;
+    }
+.edu_bar:after{
+    height: 50px;
+    left: 15px;
+    bottom: 0;
+    width: 50px;
+    }
+.education_shahin_level h3{
+	font-size:14px;
+	padding:7px 10px;
+	right:17px;
+	top:2px;  
+	}
+.education_shahin_level h4{
+	font-size:16px;
+	padding-bottom:8px;
+	padding-top:15px;
+	}
+.education_shahin_level h5{
+	font-size:13px;
+	padding-bottom:10px;
+    padding-right: 30px;
+	}
+.education_shahin_level p{
+	font-size:13px;
+	line-height:20px;
+	padding-bottom:10px;
+	}
+	
+/* education css end */
+
+/* contact page start */
+
+.shahin_padd_ct{
+	padding-bottom:50px;
+	}
+.con_overlay{
+    padding: 60px 0px 60px;
+    }
+.shahin_ct_mar{
+	margin-bottom:20px;
+	}
+.shahin_con_part:after{
+	height:0px;
+	width:86%;
+	bottom:15px;
+	}
+.shahin_con_part:before{
+	height:25px;
+	width:0px;
+	bottom:15px;
+	}
+.shahin_con_part_two:after{
+	height:25px;
+	width:0px;
+	}
+.shahin_con_part_two:before{
+	border-color:#fff;
+	height:0px;
+	width:86%;
+	}
+	
+.shahin_con_part_text:after{
+	height:0px;
+	width:93%;
+	bottom:15px;
+	}
+.shahin_con_part_text:before{
+	height:100px;
+	width:0px;
+	bottom:15px;
+	}
+.shahin_con_part_two_text:after{
+	height:100px;
+	width:0px;
+	}
+.shahin_con_part_two_text:before{
+	height:0px;
+	width:93%;
+	}
+	
+.shahin_contact .fields{
+	height:38px;
+	font-size:12px;
+	padding:0px 15px;
+	margin-bottom:15px;
+	}
+.shahin_contact textarea{
+	font-size:12px;
+	padding:15px;
+	margin-bottom:15px;
+	}	
+.sub-btn{
+    font-size: 12px;
+    margin-top: 3%;
+	}
+
+.sbt_con1:after{
+	height:10px;
+	width:10px;
+    bottom: 0;
+	}
+.sbt_con1:before{
+	height:10px;
+	width:10px;
+    bottom: 0;
+	}
+.sbt_con:after{
+	height:10px;
+	width:10px;
+	}
+.sbt_con:before{
+	height:10px;
+	width:10px;
+	}
+/*contacts part css end*/
+	
+/*shahin_hire part css start*/
+.shain_hire_h2 h2{
+	margin:50px 0px;
+	}
+.shahin_hire ul{
+	padding-left:10%;
+	}
+.shahin_hire ul li a{
+	margin:10px 25px;
+	}
+.shahin_hire_part_two:after{
+	left:0px;
+	bottom:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part_two:before{
+	right:0;
+	bottom:0;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part:after{
+	left:0px;
+	top:0px;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part:before{
+	right:0;
+	top:0;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+/*shahin_hire part css end*/
+/*footer part start*/
+footer{
+	padding:20px 0px;
+	}
+footer h4{
+	font-size:14px;
+	}
+footer h4 a{
+	font-size:16px;
+	}
+/*footer part end*/
+
+}
+/* media ends of tab/991px */
+
+/* media start of mobile/767px */
+
+@media(max-width:767px){
+/*start main css part*/
+.ovelay_shahin{
+	padding:50px 0px;
+	}
+.shahin_banner h2{
+	font-size:20px;
+	padding-bottom:20px;
+	}
+.shahin_banner h2 span{
+	font-size:26px;
+	}
+.shahin_banner p{
+	font-size:12px;
+	padding-bottom:20px;
+	}
+.shahin_banner p:after{
+	width:30px;
+	top:9px;
+	}
+.shahin_banner p:before{
+	width:30px;
+	top:9px;
+	}
+.shahin_banner h4{
+	font-size:16px;
+	padding-bottom:30px;
+	}
+/*menu_part css sart */
+.navbar-brand{
+	padding:8px;
+	}
+.shahin_navbar li a{
+	font-size:12px;
+	padding:10px 22px;
+	text-align:center;
+	}
+/*shahin_menu_part css end */
+
+/* about me css sart */
+.about_shahin{
+	padding:40px 0px;
+	}
+.shahin_img{
+	margin:40px 0px 50px;
+	}
+.shahin_img .coun{
+	 width: 200px;
+	 height:200px;
+	}
+.shahin_img .coun img{
+	border-radius:5px;
+	}
+.shahin_img .over{
+	 width: 200px;
+	 height:200px;
+	 top: 0;
+	 left: 0;
+	}	
+.shahin_about_content p{
+	font-size:13px;
+	padding-bottom:10px;
+	line-height:24px;
+	}
+.shahin_about_content h5{
+	font-size:14px;
+	}
+.shahin_about_content h5 span{
+	font-size:17px;
+	}
+	
+/* about me css end */
+
+/* portfolio css start */
+.portfolio_shahin{
+	padding:40px 0px 0px;
+	}
+
+.shahin_comm_heading h2{
+	margin-bottom:20px;
+	font-size:28px;
+	}
+
+	
+	
+/* category filter */
+
+.filter-container {
+    text-align:center;
+    padding:0px 20px 20px;
+}
+
+
+.shahin_fillter ul.filter > li > a {
+    font-size:12px;
+    line-height:30px;
+}
+
+.shahin_fillter ul.filter > li span {
+    font-size:14px;
+    margin:0 2px
+}
+
+
+/* the color of the transparent overlay border */
+.portfolio-section{
+	padding:0px 0px 40px;
+	}
+
+/* project title under image */
+
+.portfolio-section .article-title {
+    text-align:center;
+    float:left;
+    width:100%;
+    font-size:18px;
+    line-height:24px;
+    padding:10px 0 30px 0;
+}
+
+.portfolio-section .article-title a {
+	font-size:15px;
+}
+
+
+/* icons inside overlay */
+
+.portfolio-section figure .inner-overlay-content.with-icons a {
+    width:40px;
+    height:40px;
+    line-height:42px;
+    margin:0 10px;
+    font-size:16px;
+}
+
+/* portfolio css end */
+
+/* worksplace css start */
+
+.ovelay_shahin_two{
+	padding:40px 0px;
+	}
+
+.shahin_woksplace{
+	padding:20px 0px;
+	}
+.shahin_work_part i{
+	font-size:35px;
+	padding:15px 0px 0px;
+	}
+.shahin_work_part:after{
+	left:15px;
+	top:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_work_part:before{
+	right:15px;
+	top:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_work_part_two:after{
+	left:15px;
+	bottom:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_work_part_two:before{
+	right:15px;
+	bottom:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_woksplace h4{
+	font-size:12px;
+	padding-top:5px;
+	}
+.shahin_work_padd{
+	margin-left:25%;
+	}
+	
+/* worksplace css end */
+
+/* experience css start */
+	
+.shahin_experience{
+	padding:40px 0px;
+	}
+.shahin_exe_h h2{
+	margin-bottom:40px;
+	}
+	
+.shahin_exp_part_main{
+	padding:0px 0px 20px 25px;
+	margin-bottom:30px;
+	}
+.shahin_exp_part:after{
+	left:15px;
+	top:0px;
+	width:25px;
+	height:25px;
+	}
+.shahin_exp_part:before{
+	right:15px;
+	top:0px;
+	width:25px;
+	height:25px;
+	}
+.shahin_exp_part_two:after{
+	left:15px;
+	bottom:0px;
+	width:25px;
+	height:25px;
+	}
+.shahin_exp_part_two:before{
+	right:15px;
+	bottom:0px;
+	width:25px;
+	height:25px;
+	}
+.shahin_exp_part h4{
+	font-size:17px;
+	padding-bottom:10px;
+	}
+.shahin_exp_part p{
+	font-size:12px;
+	padding-right:20px;
+	line-height:22px;
+	padding-bottom:8px;
+	}
+.shahin_exp_part h5 {
+    font-size: 12px;
+	}
+.shahin_exp_part h5 span {
+    font-size: 9px;
+	}
+.shahin_p {
+    font-size: 12px !important;
+	}
+	
+/*skill part css sart*/
+.skills-bar-container {
+	  width:85%;
+	}
+.skills-bar-container li .progressbar-title {
+     font-size: 12px;
+	}
+.skills-bar-container li .progressbar-title h3 {
+     font-size: 14px;
+	 padding-bottom:0px;
+	}
+
+/*skill part css end*/
+/* experience css end */
+
+/* shahin_testimonial part start */
+.shahin_test_h2 h2{
+	margin-bottom:40px;
+	}
+.shahin_test{
+	padding:0px 0px 180px;
+	}
+.shahin_test_content{
+	top:75%;
+	}
+.shahin_test_content h4{
+	font-size:15px;
+	padding-top:20px;
+	padding-bottom:10px;
+	}
+.shahin_test_content h5{
+	font-size:14px;
+	padding-bottom:5px;
+	line-height:26px;
+	}
+.shahin_test_content p{
+	font-size:13px;
+	line-height:20px;
+	padding-left:10px;
+	}
+.shahin_test_content p span{
+	font-size:12px;
+	}
+.carousel-indicators{
+	bottom:-25px;
+	}
+.carousel-indicators li{
+	border:2px solid #F1B519;
+	}
+/* testimonial css end */
+
+/* education css start */
+.education_shahin{
+	padding:40px 0px;
+	}
+.shahin_edu_h2{
+	margin-bottom:40px;
+	}
+	
+.education_shahin_level{
+	padding:20px 0px 20px 25px;
+	margin-bottom:30px;
+	}
+.education_shahin_level h3{
+	font-size:16px;
+	padding:8px 10px;
+	right:17px;
+	top:2px;  
+	}
+.education_shahin_level h4{
+	font-size:14px;
+	padding-bottom:8px;
+	padding-top:30px;
+	}
+.education_shahin_level h5{
+	font-size:13px;
+	padding-bottom:10px;
+	}
+.education_shahin_level p{
+	font-size:12px;
+	line-height:20px;
+	padding-bottom:5px;
+	}
+	
+/* education css end */
+
+/* contact page start */
+
+.shahin_padd_ct{
+	margin-bottom:40px;
+	}
+
+.shahin_ct_mar{
+	margin-bottom:10px;
+	}
+.shahin_con_part:after{
+	height:0px;
+	width:88%;
+	bottom:15px;
+	}
+.shahin_con_part:before{
+	height:25px;
+	width:0px;
+	bottom:15px;
+	}
+.shahin_con_part_two:after{
+	height:25px;
+	width:0px;
+	}
+.shahin_con_part_two:before{
+	border-color:#fff;
+	height:0px;
+	width:88%;
+	}
+	
+.shahin_con_part_text:after{
+	height:0px;
+	width:88%;
+	bottom:15px;
+	}
+.shahin_con_part_text:before{
+	height:100px;
+	width:0px;
+	bottom:15px;
+	}
+.shahin_con_part_two_text:after{
+	height:100px;
+	width:0px;
+	}
+.shahin_con_part_two_text:before{
+	height:0px;
+	width:88%;
+	}
+	
+.shahin_contact .fields{
+	height:35px;
+	font-size:12px;
+	padding:0px 15px;
+	margin-bottom:15px;
+	}
+.shahin_contact textarea{
+	font-size:12px;
+	padding:15px;
+	margin-bottom:15px;
+	}	
+.sub-btn{
+    font-size: 12px;
+    margin-top: 3%;
+	padding:10px 23px;
+	}
+
+.sbt_con1:after{
+	height:10px;
+	width:10px;
+	}
+.sbt_con1:before{
+	height:10px;
+	width:10px;
+	}
+.sbt_con:after{
+	height:10px;
+	width:10px;
+	}
+.sbt_con:before{
+	height:10px;
+	width:10px;
+	}
+/*contacts part css end*/
+
+/*shahin_hire part css start*/
+.shain_hire_h2 h2{
+	margin:60px 0px 40px;
+	}
+	
+.shahin_hire ul{
+	padding-left:12%;
+	}
+.shahin_hire ul li a{
+	margin:10px 5px;
+	}
+.shahin_hire_part_two:after{
+	left:0px;
+	bottom:0px;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part_two:before{
+	right:0;
+	bottom:0;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part:after{
+	left:0px;
+	top:0px;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+.shahin_hire_part:before{
+	right:0;
+	top:0;
+	border-color:#fff;
+	width:15px;
+	height:15px;
+	}
+/*shahin_hire part css end*/
+
+/*footer part start*/
+footer{
+	padding:15px 0px;
+	}
+footer h4{
+	font-size:10px;
+	line-height:20px;
+	}
+footer h4 a{
+	font-size:12px;
+	}
+/*footer part end*/
+
+/* back-to-top page end */
+.back-to-top {
+    bottom: 30px;
+    right: 25px;
+	}
+.back-to-top i {
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 5px 8px;
+	}
+/* back-to-top page end */
+
+
+}
+	
+/* media start of mobile/480px */
+@media(min-width:321px) and (max-width:480px){
+	.shahin_banner h2{
+		font-size:26px;
+		}
+	.shahin_banner h2 span{
+		font-size:36px;
+		}
+	.shahin_banner p{
+		font-size:14px;
+		}
+	.shahin_banner p::before{
+		width:50px;
+		top:11px;
+		}
+	.shahin_banner p::after{
+		width:50px;
+		top:11px;
+		}
+	.shahin_banner h4{
+		font-size:25px;
+		}
+	.portfolio-section .article-title a{
+		font-size:20px;
+		}
+	.shahin_woksplace{
+		padding:30px 0;
+		}
+	.shahin_woksplace h4{
+		font-size:18px;
+		}
+	.shahin_work_part i{
+		font-size:40px;
+		}
+	.shahin_exp_part h4{
+		font-size:20px;
+		}
+	.shahin_exp_part p{
+		font-size:14px;
+		padding-bottom:15px;
+		line-height:28px;
+		}
+	.shahin_exp_part h5{
+		font-size:18px;
+		}
+	.shahin_exp_part h5 span{
+		font-size:13px;
+		}
+    .carousel-indicators{
+          bottom: -35px;
+        }
+    .shahin_exp_part_main{
+        padding:0px 0px 0px 25px;
+        margin-bottom:30px;
+        }
+    .education_shahin_level{
+      margin-bottom: 30px;
+      padding: 20px 0 20px 35px;
+     }
+	.shahin_exp_part::before{
+		right:15px;
+		}
+	.shahin_exp_part_two::before{
+		right:15px;
+		}
+    .shahin_con_part_two_text::before {
+      height: 0;
+      width: 92.5%;
+    }
+    .shahin_con_part_two::before {
+      border-color: #fff;
+      height: 0;
+      width: 92.5%;
+    }
+    .shahin_con_part::after {
+      bottom: 15px;
+      height: 0;
+      width: 92.5%;
+    }
+    .shahin_con_part_text::after {
+          bottom: 15px;
+          height: 0;
+          width: 92.5%;
+        }
+    .sub-btn {
+          font-size: 14px;
+          margin-top: 2%;
+          padding: 10px 61px;
+        }
+    .shain_hire_h2 h2 {
+          margin: 60px 0 40px;
+        }
+	.shahin_hire_part_two::after{
+		left:33px;
+		}
+	.shahin_hire_part::after{
+		left:33px;
+		}
+	.shahin_hire ul{
+		padding-left:26.5%;
+		}
+}
