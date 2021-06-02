@@ -39,6 +39,10 @@ a{
 	outline:none !important;
 }
 
+.img-test {
+	width: 15%;
+}
+
 .p0{
 	padding-left:0px;
 	padding-right:0px;
