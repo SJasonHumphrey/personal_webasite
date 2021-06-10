@@ -14,6 +14,11 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="fonts/flat/font/flaticon.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            console.log("grecaptcha is ready!");
+        };
+    </script>
 </head>
 
 <body>
@@ -728,54 +733,55 @@
                 </div>
                 <!-- shahin_comm_heading part end -->
 
-                <!-- shahin_contact part start -->
-                <!-- <div class="col-md-8 col-md-offset-2 shahin_contact col-sm-8 col-sm-offset-2">
-                    <form>
+                shahin_contact part start 
+                <div class="col-md-8 col-md-offset-2 shahin_contact col-sm-8 col-sm-offset-2">
+                    <form action="https://submit-form.com/dIONEwop" id="dIONEwop">
+                        <div class="g-recaptcha" data-sitekey="6LfPEyUbAAAAAFUL6nb_mRlTX0PHVdTVYXBcr7kV"></div>
                         <div class="col-sm-6 shahin_ct_mar">
                             <div class="shahin_exp_part_two shahin_con_part">
                                 <div class="shahin_exp_part shahin_con_part_two">
-                                    <input type="text" class="fields" placeholder="Enter Your Name">
+                                    <input type="text" class="fields" name="name" placeholder="Enter Your Name">
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 shahin_ct_mar">
                             <div class="shahin_exp_part_two shahin_con_part">
                                 <div class="shahin_exp_part shahin_con_part_two">
-                                    <input type="email" class="fields" placeholder="Enter Your email">
+                                    <input type="email" class="fields" name="email" placeholder="Enter Your email">
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 shahin_ct_mar">
                             <div class="shahin_exp_part_two shahin_con_part">
                                 <div class="shahin_exp_part shahin_con_part_two">
-                                    <input type="text" class="fields" placeholder="Enter phone number">
+                                    <input type="text" class="fields" name="phone "placeholder="Enter phone number">
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 shahin_ct_mar">
                             <div class="shahin_exp_part_two shahin_con_part">
                                 <div class="shahin_exp_part shahin_con_part_two">
-                                    <input type="text" class="fields" placeholder="Your subject">
+                                    <input type="text" class="fields" name="subject" placeholder="Your subject">
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 shahin_ct_mar">
                             <div class="shahin_exp_part_two shahin_con_part_text ">
                                 <div class="shahin_exp_part shahin_con_part_two_text ">
-                                    <textarea placeholder="Type message"></textarea>
+                                    <textarea name="message" placeholder="Type message"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3 shahin_ct_mar text-center col-xs-6">
                             <div class="shahin_exp_part_two sbt_con1">
                                 <div class="shahin_exp_part sbt_con">
-                                    <input type="submit" class="sub-btn" value="SEND ME">
+                                    <input type="submit" class="sub-btn" value="SEND">
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="clearfix"></div> -->
+                <div class="clearfix"></div>
                 <!-- contact_shahin part end -->
 
                 <!-- shahin_comm_heading part start -->
@@ -859,6 +865,9 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
 </body>
 
 </html>
