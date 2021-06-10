@@ -38,6 +38,11 @@ a{
 	text-decoration:none !important;
 	outline:none !important;
 }
+.git,
+.camera{
+	width: 15%;
+	margin-left: 10.5rem;
+}
 
 .img-test {
 	width: 15%;
@@ -1398,7 +1403,7 @@ footer h4 a:hover{
 }
 
 .social_icon ul li .fbbg{
-	background: #3498db;
+	background: #fdfdfd;
 }
 
 .social_icon ul li .twbg{
